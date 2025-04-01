@@ -1,0 +1,84 @@
+===================Lambda Expression questions==================
+1.Write a lambda expression to check if a given number is even or odd.
+
+2.Use a lambda expression to find the square of a number.
+
+3.Implement a lambda function that takes a list of integers and prints only the even numbers.
+
+4.Create a lambda expression that concatenates two strings and returns the result.
+
+5.Convert a normal anonymous class into a lambda expression:
+
+-----intermediate------
+6.Given a list of strings, use a lambda expression to sort them in ascending order.
+
+7.Use a lambda function inside removeIf() to remove all negative numbers from a list.
+
+8.Implement a lambda expression that finds the sum of all even numbers in a list.
+
+9.Convert a lambda expression into a method reference.
+
+10.Write a lambda expression to convert all strings in a list to uppercase.
+
+==================Functional Interface Questions ====================
+ -----------Beginner-------
+11.Implement a Consumer<String> that prints the given string.
+
+12.Implement a Supplier<Integer> that returns a random number between 1 and 100.
+
+13.Implement a Predicate<String> that checks if a given string is a palindrome.
+
+14.Implement a Function<Integer, String> that converts an integer to its binary string.
+
+15.Implement a BiFunction<Integer, Integer, Integer> to find the sum of two numbers.
+
+----------Intermediate---------
+16.Given a list of numbers, use a Predicate<Integer> to filter out all numbers greater than 50.
+
+17.Write a program that applies a UnaryOperator<Integer> to double all elements in a list.
+
+18.Implement a BiPredicate<String, String> that checks if two strings are anagrams.
+
+19.Use a BinaryOperator<Integer> to find the maximum of two numbers.
+
+20.Implement a custom functional interface with two methods and test if it compiles.
+
+
+=======================Method Reference=====================
+ -----------Beginner--------
+21.Convert the following lambda expression into a method reference:
+
+22.Use a method reference to refer to a static method that calculates the square of a number.
+
+23.Use a method reference to call an instance method that converts a string to lowercase.
+
+24.Use a constructor reference to create a new object of a class.
+
+25.Convert this lambda into a method reference:
+
+----------Intermediate---------
+26.Given a class MathUtils with an instance method multiply(int a, int b), create a method reference for it.
+
+27.Create a method reference for a method that checks if a string is empty.
+
+28.Convert the following into a method reference:
+
+29.Implement a functional interface that refers to a non-static method without creating an instance.
+
+30. Use a method reference to sort a list of strings by their lengths.
+
+==========mini project===
+ Implement a real-world example using all three topics: Lambda expressions, Functional Interfaces, and Method References. Example:
+✔️ Filter employee salaries using Predicate
+✔️ Print all names using Consumer
+✔️ Sort employees using Method Reference
+
+Would you like some sample answers or hints for any question? 
+
+
+
+
+************************MISC**************************************
+-> read about List.of , Arrays.List() and ArrayList difference.
+
+
