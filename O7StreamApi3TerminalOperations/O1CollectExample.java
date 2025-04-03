@@ -13,7 +13,6 @@ public class O1CollectExample {
         Set<Integer> scores= Arrays.asList(100,200, 200, 100,23,1,21).stream().collect(Collectors.toSet());//unique elment
         System.out.println(scores);
 
-
         //convert into map
         List<String>names=Arrays.asList("Mohit", "ravi","Aman", "himanshu");
         Map<String , Integer>namesWithLen=names.stream()
