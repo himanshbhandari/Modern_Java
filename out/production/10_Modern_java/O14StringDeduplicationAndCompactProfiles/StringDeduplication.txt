@@ -1,0 +1,28 @@
+When your app has a lot of duplicate Strings (like "hello" repeated 10,000 times), Java 8 can share one copy of the actual string content instead of creating separate objects.
+
+when we create string using new keyword it created on heap and internally that heap address also contain address of one char array like this-
+String s1=new String()---> (#100)address of heap ----> (#255) char[] array address
+so s1 have #100 address;
+String s2=new String()----> (#300)Address of heap ----> (#455) char []array address
+s2 have #300 address
+
+But when we enable String deduplication then above heap address remain same but that heap address pointed to single char array if content of both s1 and s2 is same so only single char array create inside heap.
+But s1 and s2 memeory adress still different #100 and #300 but inside that address char array reference same #255 
+if we change something in s2 so you know string is immutable so new address and new char array will created. now both content different so two char array is created.
+
+for enabling to StringDeduplication we need to enable one flag in jvm :
+ -XX:+UseStringDeduplication
+
+
+=================================================================================================================================================================================
+
+Compact Profiles(Modular JDK for small devices)
+Profile	Contains	Use Case
+compact1	Basic classes (java.lang, java.io, java.util)	Small command-line tools, basic apps
+compact2	compact1 + networking, security	Networked apps, REST clients
+compact3	compact2 + GUI, RMI, XML	Rich clients, Swing, etc.
+
+use this in jvm
+javac --profile compact1 MyApp.java
+
+

@@ -55,6 +55,5 @@ public class O1NewCollectionFeature {
         gradeMap.computeIfAbsent("A", key -> new ArrayList<>()).add("Rahul");
         System.out.println(gradeMap);
 
-
     }
 }
